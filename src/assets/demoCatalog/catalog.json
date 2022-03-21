@@ -1,0 +1,54 @@
+{
+	"versionInfo": {
+		"updateAvailable": "2.1",
+		"updateURL": "4f60b993df4fb5af0a545c3ce24e3cde",
+		"fileName": "demo-catalog-2.1.zip"
+	},
+	"demos": [
+		{
+			"name": "Purchase to Pay",
+			"description":"Customers are increasingly focusing on their Purchase to Pay capabilities, with an eye to increasing process execution. The external pressure for transformation and permanent change is as high as never before, as organizations try to adapt to new challenges.  In fact, worldwide spending on digital transformation is expected to grow to $2.3 trillion by 2022.",
+			"link": "https://processmining.ariscloud.com",
+			"thumbnail": "./assets/demoCatalog/thumbnail/purchaseToPay.jpg",
+			"comingSoon": false,
+			"underMaintenance": false,
+			"detailPage" : "/purchaseToPay/purchase-pay.json"
+		},
+		{
+			"name": "IoT Production Process",
+			"description":"The expectations of customers, and business partners alike, are rising rapidly as the world becomes increasingly digitized. A Connected Customer Experience is the new driver for disruption. Companies are not only being challenged by customer expectations, but also by rising production costs, regulatory compliance and increasing complexity of IT infrastructure. At the same time, they are forced to reduce operational costs and drive new business models, innovation, and mainly digital transformation.",
+			"link": "https://processmining.ariscloud.com",
+			"thumbnail": "./assets/demoCatalog/thumbnail/iotProductionProcess.jpg",
+			"comingSoon": false,
+			"underMaintenance": false,
+			"detailPage" : "/iotProductionProcess/production-process.json"
+		},
+		{
+			"name": "Parcel Delivery",
+			"description":"The demo covers a fairly simple parcel delivery process to demonstrate an easy way to try out our process mining approach. It's the most simplest demo for ARIS Process Mining, because it is meant to rebuild quickly your first analysis from log data.",
+			"link": "https://processmining.ariscloud.com",
+			"thumbnail": "./assets/demoCatalog/thumbnail/parcelDelivery.jpg",
+			"comingSoon": false,
+			"underMaintenance": false,
+			"detailPage" : "/parcelDelivery/parcel-delivery.json"
+		},
+		{
+			"name": "Sales Order Management",
+			"description":"The ARIS Process Mining Enterprise demo SALES ORDER MANAGEMENT has been retired, because it was mainly built to focus on ARIS Process Performance Manager (ARIS PPM), the predecessor of ARIS Process Mining.",
+			"link": "https://processmining.ariscloud.com",
+			"thumbnail": "./assets/demoCatalog/thumbnail/salesOrderManagement.jpg",
+			"comingSoon": false,
+			"underMaintenance": false,
+			"detailPage" : "/salesOrderManagement/sales-order-management.json"
+		},
+		{
+			"name": "Order to Vaccination",
+			"description":"The ARIS Process Mining SaaS demo ORDER-TO-VACCINATION.",
+			"link": "https://processmining.ariscloud.com",
+			"thumbnail": "./assets/demoCatalog/thumbnail/orderForVaccination.jpg",
+			"comingSoon": true,
+			"underMaintenance": false,
+			"detailPage" : "/orderToVaccination/order-vaccination.json"
+		}
+	]
+}

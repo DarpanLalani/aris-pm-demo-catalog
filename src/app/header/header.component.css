@@ -1,0 +1,19 @@
+.container-80 {
+    min-height: 48px;
+    height: 48px;
+    z-index: 1010;
+    background-color: rgb(5, 99, 219);
+    margin: 0;
+}
+.header-icon {
+    color: white;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-top: 8px;
+}
+.profile-icon {
+    text-align: right;
+    cursor: pointer;
+    padding-right: 20px;
+    padding-top: 2px;
+}

@@ -1,0 +1,128 @@
+<div class="action-bar">
+  <i class="bi bi-bookmark-fill"></i>  Demo Catalog (Free Trial)
+</div>
+
+
+  <div class="btn back-page-tab" (click)="navigateToDemoCatalog()">
+    <i class="bi bi-arrow-left-circle-fill"></i> Back to Demo Catalog
+  </div>
+
+<div *ngIf="!demoDetails">
+  <rectangle-spinner class="demo-details-spinner"></rectangle-spinner>
+</div>
+
+<div *ngIf="demoDetails" class="row demo-details-container">
+  <div class="col-lg-1"></div>
+  <div class="col-lg-10">
+    <div class="card demo-details-main-container">
+      <div *ngIf="demoDetails.comingSoon==true" class="coming-soon-tag">Coming soon</div>
+      <div *ngIf="demoDetails.underMaintenance==true" class="under-maintenance-tag">Under Maintenance</div>
+      <div class="demo-details-header">
+        <div class="col-sm-12 col-xs-12 demo-details-header-banner center-cropped"
+          [style.background-image]="'url(' + demoDetails.banner + ')'">
+          <img class="demo-details-banner" [src]="demoDetails.banner ? demoDetails.banner : ''" />
+          <div class="col-sm-8 col-xs-12 headline" style="background: none;">
+           <div class="headline">
+            <h2>{{demoDetails?.name}}</h2>
+            <h5>{{demoDetails?.tagline}}</h5>
+           </div>
+          </div>
+          <div *ngIf="demoDetails.comingSoon && !demoDetails.underMaintenance" class="col-sm-4 col-xs-12 coming-soon-container">
+            <div><img src="./assets/icons/icon_under_construction.png"></div>
+            <h4>Under Construction</h4>
+            <div>This demo is currently in planning and will be released soon. If you need the demo urgently or think it
+              should be released quicker contact us.</div>
+            <div> <button class="btn btn-warning" (click)="showInterest()"><i class="dlt-c8y-icon-envelope"></i> Show Interest</button></div>
+          </div>
+          <div *ngIf="demoDetails.underMaintenance && !demoDetails.comingSoon" class=" col-sm-4 col-xs-12 under-maintenance-container">
+            <div><img src="./assets/icons/icon_under_construction.png"></div>
+            <h4>Under Maintenance</h4>
+            <div>This demo is currently in Under Maintenance. If you need the demo urgently contact us.</div>
+          </div>
+          <div *ngIf="!demoDetails.comingSoon && !demoDetails.underMaintenance" class="col-sm-12 col-xs-12 demo-details-action-bar">
+            <div class="col-sm-8 col-xs-12 meta-information">
+              <div class="col-sm-4 col-xs-12 meta-version inline">
+                <div class="legend inline" aria-describedby="Device info">
+                  <i class="bi bi-info-circle"></i> Version (Installed):
+                </div>
+                <div class="inline">
+                  {{demoDetails.meta?.version}}
+                  ({{isDemoInstalled() && versionInstalled != '' ? versionInstalled : '-'}})
+                </div>
+              </div>
+              <div class="col-sm-4 col-xs-12 meta-lastupdated inline">
+                <div class="legend inline" aria-describedby="Device info">
+                  <i class="bi bi-clock"></i> Last Updated:
+                </div>
+                <div class="inline">
+                  {{demoDetails?.meta?.lastUpdate}}
+                </div>
+              </div>
+              <div class="col-sm-4 col-xs-12 meta-contact inline">
+                <div class="legend inline" aria-describedby="Device info">
+                  <i class="bi bi-envelope"></i> Contact:
+                </div>
+                <div class="inline">
+                  <a href="mailto:{{demoDetails.meta?.contact?.email}}">{{demoDetails.meta?.contact?.email}}</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-xs-12 demo-details-actions">
+              <!-- <button *ngIf="isForceUpgrade()" type="button" class="col-sm-4 col-xs-4 btn btn-primary btn-icon btnBlinker" (click)="updateDemoCatalog()"><i
+                class="dlt-c8y-icon-installing-updates" title="Update Demo Catalog"></i></button> -->
+              <button *ngIf="isDemoInstallable() && !isDemoInstalled() && !isForceUpgrade()" class="col-sm-4 col-xs-4 btn btn-primary" (click)="installDemo()"><i
+                  class="dlt-c8y-icon-cloud-download"></i> Install Demo <i *ngIf="isBusy" class="dlt-c8y-icon-circle-o-notch icon-spin"></i> </button>
+              <button *ngIf="isDemoInstallable() && isDemoInstalled()" class="col-sm-4 col-xs-4 btn btn-primary" (click)="deleteDemo()"><i
+                  class="dlt-c8y-icon-close"></i> Delete Demo</button>
+              <button *ngIf="isDemoPreviewable()" class="col-sm-4 col-xs-4 btn btn-default w-95" (click)="openPreview()"><i class="bi bi-arrow-up-right-square"></i>
+                Preview</button>
+              <button class="btn btn-warning w-104" (click)="feedback()"><i class="bi bi-star"></i> Feedback</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-xs-12 card-block demo-details-content-container">
+        <div class="row demo-details-description-container">
+          <div class="col-lg-6">
+            
+            <div [innerHTML]="demoDetails?.description" class="description-container"></div>
+          </div>
+          <div class="col-lg-6 demo-details-gallery-container">
+            <div *ngIf="videos.length > 0" class="video-container">
+              <ng-image-slider [images]="videos" [infinite]="false" 
+              [autoSlide]="3"
+              [imageSize]="{width: '100%', height: '300'}"
+              slideImage="1" #nav></ng-image-slider>
+            </div>
+            <!-- <ngx-gallery [options]="GALLERY_OPTIONS" [images]="galleryImages" class="image-gallery-container">
+            </ngx-gallery> -->
+
+            <gallery *ngIf="galleryImages && galleryImages.length > 0 "  id="basic-test" gallerize [items]="galleryImages" class="galleryDiv"></gallery>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- <div class="card-group" >
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="card demo-help-card">
+                <div class="card-header">
+                    Looking for Support?
+                </div>
+                <div class="card-block">
+                    <div class="row demo-help-body">
+                        <div class="col-xs-12 col-sm-12 ">
+                            <div class="row col-sm-1 col-xs-2">
+                              <img  style="margin-right: 35px" (click)="openLink('forum')"  src="./assets/c8y-app-query.png">
+                            </div>
+                            <div class="row col-sm-11 col-xs-10" style="line-height: 2;">
+                              Get your questions answered and stay upto date with the latest news on <span (click)="openLink('forum')">Software AG Tech Community</span>.
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+ 
+</div>

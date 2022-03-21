@@ -1,0 +1,31 @@
+{
+  "id": "global!presales!order!vaccination",
+  "name": "Order to Vaccination",
+  "tagline": "ARIS Process Mining SaaS demo",
+  "banner": "./assets/demoCatalog/orderToVaccination/banner.jpg",
+  "description": "<p><span ><b>Overview</b><br><br><p><span >The ARIS Process Mining SaaS demo ORDER-TO-VACCINATION.</p></span>",
+  "story": {},
+  "meta": {
+    "lastupdated": "2021-21-03",
+    "version": "1.0.0",
+	"forceUpgrade": true,
+	"supportedAppBuilder": "Application Builder v1.2.6, Application Builder v1.2.7, Application Builder v1.2.8",
+	"postInstallationMsg": "This demo uses browser based simulator(s) for business Data. Data will be available in about 2-10 Minutes after navigating to Asset Tracking Application",
+	"exceptionHost": [ "demo-templates-master.eu-latest.cumulocity.com" ],
+    "contact": {
+      "name": "Global Presales",
+      "email": "aristrial@softwareag.com"
+    },
+    "preview": "https://processmining.ariscloud.com",
+    "archive": "",
+    "acceleratorDependencies": [],
+	"widgetDependencies": []
+  },
+  "assets": {
+    "images": [
+      "./assets/demoCatalog/orderToVaccination/image1.jpg"
+    ],
+    "videos": [
+    ]
+  }
+}

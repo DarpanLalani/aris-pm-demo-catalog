@@ -1,0 +1,35 @@
+.notification-action-bar {
+    padding: 10px 25px;
+    background-color: #0b385b;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 0px;
+}
+
+.notification-version-div {
+    display: inline;
+    font-size: 14px;
+    color: white;
+}
+
+.newVersion {
+    color: yellow;
+}
+
+.blink_me {
+    animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.textAlign {
+    text-align: center;
+}

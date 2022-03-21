@@ -1,0 +1,9 @@
+<div class="col-sm-12  notification-action-bar">
+    <div class="col-sm-2 col-xs-4 notification-version-div">
+        Version: {{appVersion}}
+    </div>
+    <div class="col-sm-8 col-xs-8 textAlign" *ngIf="newVersion">
+        <a href="#" (click)="updateNewVersion()"><span class="newVersion blink_me">New Version Available. Update now!</span></a>
+    </div>
+    <div class="col-sm-2 col-xs-0"> </div>
+</div>

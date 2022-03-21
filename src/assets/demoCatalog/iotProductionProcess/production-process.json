@@ -1,0 +1,34 @@
+{
+  "id": "global!presales!iot!production!process",
+  "name": "IoT Production Process",
+  "tagline": "ARIS Process Mining SaaS demo",
+  "banner": "./assets/demoCatalog/iotProductionProcess/banner.jpg",
+  "description": "<p><p><span ><b>Demo Messaging</b><br><br> The expectations of customers, and business partners alike, are rising rapidly as the world becomes increasingly digitized. A Connected Customer Experience is the new driver for disruption. Companies are not only being <b>challenged by customer expectations</b>, but also by <b>rising production costs, regulatory compliance </b>and <b>increasing complexity of IT infrastructure</b>. At the same time, they are forced to <b>reduce operational costs and drive new business models, innovation</b>, and mainly digital transformation. </span></p></p><br><p><span>Manufacturers are especially being faced with the constant struggle <b>of increasing revenue while decreasing costs</b> to serve. To support this digital transformation projects, products are getting smarter, as are the factories that make them. The Internet of Things (IoT) is the key enabler for this. According to analysts, <b>they expect an investment in (Industrial) IoT of 60 trillion USD in the next 15 years.</b></span></p><ul><li ><span >How do you check if your operation is running as it should?</span></li><li ><span >How do you check if your processes are working in a harmonized manner across all factories of your company? </span></li><li ><span >How do you identify the effects of IoT events on your overall process?</span></li></ul><p><span ><b>Only 5% of all transformation initiatives result in performance improvements</b>. Most of digital transformation projects are considered a failure after they have been completed according to forbes.com. And the main reason for this is that <b>less than 10% of all companies have insight driven practices.</b> That means for IoT projects of manufacturers, <b>only 12% of these projects have been fully successful completed.</b></span></p>",
+  "story": {},
+  "meta": {
+    "lastupdated": "2021-21-03",
+    "version": "1.0.0",
+	"forceUpgrade": true,
+	"supportedAppBuilder": "Application Builder v1.2.6, Application Builder v1.2.7, Application Builder v1.2.8",
+	"postInstallationMsg": "This demo uses browser based simulator(s) for business Data. Data will be available in about 2-10 Minutes after navigating to Asset Tracking Application",
+	"exceptionHost": [ "demo-templates-master.eu-latest.cumulocity.com" ],
+    "contact": {
+      "name": "Global Presales",
+      "email": "aristrial@softwareag.com"
+    },
+    "preview": "https://processmining.ariscloud.com",
+    "archive": "",
+    "acceleratorDependencies": [],
+	"widgetDependencies": []
+  },
+  "assets": {
+    "images": [
+	"./assets/demoCatalog/iotProductionProcess/image1.png",
+  "./assets/demoCatalog/iotProductionProcess/image2.png",
+  "./assets/demoCatalog/iotProductionProcess/image3.png"
+      
+    ],
+    "videos": [
+    ]
+  }
+}

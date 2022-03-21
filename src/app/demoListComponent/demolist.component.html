@@ -1,0 +1,55 @@
+<div class="main-container">
+  <div *ngIf="!isLoading" class="row demo-list-container">
+    <div *ngFor="let demo of demos" class="col-md-3 col-sm-6 col-xs-12 card-demo-container">
+      <div class="flip-card">
+        <div class="card-demo flip-card-inner">
+          <div class="flip-card-front">
+            <img class="card-image" [src]="
+                demo?.thumbnail && demo?.thumbnail != ''
+                  ? demo?.thumbnail
+                  : 'https://labcase.softwareag.com/storage/d/268511356c9c2efe2d9e4083d37f6f50'
+              " />
+            <div class="card-data">
+              <h3 [title]="demo?.name">
+                <b>{{ demo?.name }} </b>
+              </h3>
+            </div>
+            <div *ngIf="demo.comingSoon && !demo.underMaintenance" class="flip-card-font-coming-soon">
+            </div>
+            <div *ngIf="demo.comingSoon && !demo.underMaintenance" class="coming-soon-tag">Coming soon</div>
+            <div *ngIf="demo.underMaintenance && !demo.comingSoon" class="flip-card-font-coming-soon">
+            </div>
+            <div *ngIf="demo.underMaintenance && !demo.comingSoon" class="under-maintenance-tag">Under Maintenance</div>
+          </div>
+          <div class="flip-card-back" [ngClass]="demo.comingSoon || demo.underMaintenance ?'coming-soon-back':''">
+            <div *ngIf="demo.comingSoon && !demo.underMaintenance " class="coming-soon-tag-backside">Coming Soon</div>
+            <div *ngIf="demo.underMaintenance && !demo.comingSoon " class="under-maintenance-tag-backside">Under Maintenance</div>
+            <h3 [title]="demo?.name">
+              <b>{{ demo?.name }}</b>
+            </h3>
+            <div class="card-desc">{{demo?.description?demo?.description:'No description available'}}</div>
+            <div class="button-grp">
+              <div *ngIf="!demo.detailPage" class="card-action" (click)="demoClicked(demo)">
+                <i aria-hidden="true" title="Preview" class="dlt-c8y-icon-external-link downloadbutton"
+                  [ngClass]="demo?.link && demo?.link != '' ? '' : 'disable-icon'"></i>
+                Preview
+              </div>
+              <div *ngIf="demo.detailPage" class="card-action" (click)="navigateToDetailPage(demo)">
+                <i aria-hidden="true" title="Details" class="dlt-c8y-icon-more-details downloadbutton"
+                  [ngClass]="demo?.detailPage && demo?.detailPage != '' ? '' : 'disable-icon'"></i>
+                Detail
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="isLoading">
+    <rectangle-spinner class="demo-list-spinner"></rectangle-spinner>
+  </div>
+  
+
+</div>
