@@ -32,6 +32,9 @@ MIT
 @angular/core
 MIT
 
+@angular/forms
+MIT
+
 @angular/platform-browser
 MIT
 
@@ -130,6 +133,9 @@ ngx-bootstrap/modal
 MIT
 
 ngx-bootstrap/positioning
+MIT
+
+ngx-bootstrap/rating
 MIT
 
 ngx-bootstrap/utils
