@@ -1,0 +1,34 @@
+{
+  "id": "global!presales!salesOrder!management",
+  "name": "Sales Order Management",
+  "tagline": "ARIS Process Mining Enterprise demo",
+  "banner": "./assets/demoCatalog/salesOrderManagement/banner.jpg",
+  "description": "<p><span ><b>Overview</b><br><br><p><span >The&nbsp;<strong>ARIS Process Mining Enterprise</strong>&nbsp;demo <strong>SALES ORDER MANAGEMENT</strong>&nbsp;has been <strong>retired</strong>, because&nbsp;it was mainly built to focus on ARIS Process Performance Manager (ARIS PPM), the predecessor of ARIS Process Mining.</span></p> <br><p><span >We want to offer our customers a promote future-proof ARIS Process Mining. So, please make use of the following demos below:</span></p><ul><li><span >ARIS Process Mining demos integrated in ARIS</span></li><li><span >ARIS Process Mining SaaS-only demos</span>&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;&ZeroWidthSpace;</li></ul>",
+  "story": {},
+  "meta": {
+    "lastupdated": "2021-21-03",
+    "version": "1.0.0",
+	"forceUpgrade": true,
+	"supportedAppBuilder": "Application Builder v1.2.6, Application Builder v1.2.7, Application Builder v1.2.8",
+	"postInstallationMsg": "This demo uses browser based simulator(s) for business Data. Data will be available in about 2-10 Minutes after navigating to Asset Tracking Application",
+	"exceptionHost": [ "demo-templates-master.eu-latest.cumulocity.com" ],
+    "contact": {
+      "name": "Global Presales",
+      "email": "aristrial@softwareag.com"
+    },
+    "preview": "https://processmining.ariscloud.com",
+    "archive": "",
+    "acceleratorDependencies": [],
+	"widgetDependencies": []
+  },
+  "assets": {
+    "images": [
+    ],
+    "videos": [
+      {
+        "video": "https://youtu.be/dwJmuMFMDl4",
+        "title": "Video"
+        }
+    ]
+  }
+}
