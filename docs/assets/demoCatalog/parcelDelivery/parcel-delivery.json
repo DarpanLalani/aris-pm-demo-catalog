@@ -1,0 +1,34 @@
+{
+  "id": "global!presales!parcel!delivery",
+  "name": "Parcel Delivery",
+  "tagline": "ARIS Process Mining SaaS demo",
+  "banner": "./assets/demoCatalog/parcelDelivery/banner.jpg",
+  "description": "<p><span ><b>Overview</b><br><br><p><span >The <strong>ARIS Process Mining</strong> SaaS demo&nbsp;<strong>PARCEL DELIVERY </strong>is meant for beginners. It works on al ARIS Process Mining SaaS editions but was meant for&nbsp;<b>ARIS Process Mining Basic</b>.</span></p> </span></p><p><span >The&nbsp;demo covers a fairly simple&nbsp;<b>parcel delivery</b>&nbsp;process to demonstrate an easy way to try out our process mining approach. It's the most simplest demo for ARIS Process Mining, because it is meant to <strong>rebuild quickly your first analysis </strong>from log data.</span></p><p><span >Starting from an empty ARIS Process Mining project room you are guided steps-by-step to create a data set up to an analysis with several dashboards.</span></p><br><h4 >THE CHALLENGE</h4><br><p>You are responsible for the&nbsp;<b>parcel delivery process&nbsp;</b>in your company, and your manager wants to know form you how well the process is going in real world.</span></p><span >But you don't have any tool at hand to support you. And all you got is log data from your runtime system&nbsp;about the parcel deliveries with lots of time stamps of the certain activities which took place for each delivered item.</span><br><br><h4>THE SOLUTION</h4> <br> <p><span >In a intuitive way you get quickly answers to your business-driven questions, such as</span></p><ul><li><span >How many parcels were delivered in which time frame?</span></li><li><span >What was the average, fastest and slowest time for specific items?</span></li><li><span >Which activities were done causing a bottleneck?</span></li></ul><br><h4>THE KEY MESSAGE</h4> <br><p><span >With ARIS Process Mining SaaS you are back in the driver seat for analyzing your real-world processes by any simple log data.</span></p><p><span >You don't need costly IT tools neither IT support, instead start on your own in a simple but intuitive user interface to load and analyze your process data.</span></p> ",
+  "story": {},
+  "meta": {
+    "lastupdated": "2021-21-03",
+    "version": "1.0.0",
+	"forceUpgrade": true,
+	"supportedAppBuilder": "Application Builder v1.2.6, Application Builder v1.2.7, Application Builder v1.2.8",
+	"postInstallationMsg": "This demo uses browser based simulator(s) for business Data. Data will be available in about 2-10 Minutes after navigating to Asset Tracking Application",
+	"exceptionHost": [ "demo-templates-master.eu-latest.cumulocity.com" ],
+    "contact": {
+      "name": "Global Presales",
+      "email": "aristrial@softwareag.com"
+    },
+    "preview": "https://processmining.ariscloud.com",
+    "archive": "",
+    "acceleratorDependencies": [],
+	"widgetDependencies": []
+  },
+  "assets": {
+    "images": [
+	"./assets/demoCatalog/parcelDelivery/image1.png",
+  "./assets/demoCatalog/parcelDelivery/image2.png",
+  "./assets/demoCatalog/parcelDelivery/image3.png"
+      
+    ],
+    "videos": [
+    ]
+  }
+}

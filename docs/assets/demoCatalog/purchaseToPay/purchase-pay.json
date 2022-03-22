@@ -1,0 +1,34 @@
+{
+  "id": "global!presales!purchase!pay",
+  "name": "Purchase To Pay",
+  "tagline": "ARIS Process Mining SaaS demo",
+  "banner": "./assets/demoCatalog/purchaseToPay/banner.jpg",
+  "description": "<p><span ><b>Demo Messaging</b><br><br><span>Customers are increasingly focusing on their Purchase to Pay capabilities, with an eye to increasing process execution. The external pressure for transformation and permanent change is as high as never before, as organizations try to adapt to new challenges.&nbsp; In fact, <b>worldwide spending </b>on digital transformation is expected to grow to <b>$2.3 trillion </b>by 2022. </span> </span></p><span >Well run procurement functions deliver both strategic and operational efficiencies to their organization.&nbsp; By assertively managing their vendor ecosystem, they ensure the supply chain effectiveness for their own business.</span><ul><li><span >How do you check if your operation is running as it should?</span></li><li><span >How do you maintain a clear, transparent overview of all your process driven KPI’s and how they relate to each other?</span></li></ul><span >One of the most important functions for a customer's finance organization is the accounts' payable function.&nbsp; This function is responsible for the processing of all supplier invoices.&nbsp; For this function, <b>processing as many invoices with the least amount of cost</b> is a critical KPI.&nbsp; Additionally, ensuring that the invoices are not only processed correctly, but that they are done with a good understanding and ability to take advantage of price discounts based on processing timeliness.</span>",
+  "story": {},
+  "meta": {
+    "lastupdated": "2021-21-03",
+    "version": "1.0.0",
+	"forceUpgrade": true,
+	"supportedAppBuilder": "Application Builder v1.2.6, Application Builder v1.2.7, Application Builder v1.2.8",
+	"postInstallationMsg": "This demo uses browser based simulator(s) for business Data. Data will be available in about 2-10 Minutes after navigating to Asset Tracking Application",
+	"exceptionHost": [ "demo-templates-master.eu-latest.cumulocity.com" ],
+    "contact": {
+      "name": "Global Presales",
+      "email": "aristrial@softwareag.com"
+    },
+    "preview": "https://processmining.ariscloud.com",
+    "archive": "",
+    "acceleratorDependencies": [],
+	"widgetDependencies": []
+  },
+  "assets": {
+    "images": [
+	"./assets/demoCatalog/purchaseToPay/image1.png",
+  "./assets/demoCatalog/purchaseToPay/image2.png",
+  "./assets/demoCatalog/purchaseToPay/image3.png"
+      
+    ],
+    "videos": [
+    ]
+  }
+}

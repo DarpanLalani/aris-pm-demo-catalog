@@ -17,7 +17,9 @@ import { ProgressIndicatorModalModule } from './utils/progress-indicator-modal/p
 import { RectangleSpinnerModule } from './utils/rectangle-spinner/rectangle-spinner.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
-
+import { FeedbackComponent } from './feedbackComponent/feedback.component';
+import { RatingModule } from 'ngx-bootstrap/rating';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,15 +27,18 @@ import { HeaderComponent } from './header/header.component';
     DemoOverviewComponent,
     NotificationBarComponent,
     DemoDetailComponent,
+    FeedbackComponent,
     HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
     RectangleSpinnerModule,
     ProgressIndicatorModalModule,
     AlertMessageModalModule,
+    RatingModule.forRoot(),
     GalleryModule.withConfig({ }),
     LightboxModule.withConfig({ }),
     NgImageSliderModule,

@@ -1,0 +1,32 @@
+
+
+.popover-container{
+    display: inline;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.feedback-textarea{
+width: 100%;
+}
+.rating {
+    font-size: 40px;
+    margin: 5px;
+}
+.rating-filled {
+    color: #a0b909;
+}
+.rating-panel {
+    display: block;
+    text-align: center;
+}
+.feedback-label {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    color: rgb(28, 140, 227);
+    padding-top: 20px;
+    padding-bottom: 10px;
+}

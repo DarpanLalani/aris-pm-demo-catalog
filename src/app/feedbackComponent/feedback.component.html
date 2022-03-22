@@ -1,0 +1,32 @@
+<div style="padding: 10px;">
+<div class="modal-header">
+  <h4 class="modal-title pull-left">Feedback</h4>
+</div>
+<!-- <c8y-modal title="Feedback"
+[disabled]="false"
+customFooter='true'> -->
+
+  <form [formGroup]="feedback" (ngSubmit)="onSubmit(feedback.value)">
+    <rating class="rating-panel" formControlName="rate" [max]="5" [readonly]="false"
+        (onHover)="hoveringOver($event)" (onLeave)="resetStar()"
+        [customTemplate]="ratingTemplate"
+     ></rating>
+     <div class="feedback-label">
+      <span><strong>Thanks! Any other feedback you'd like to share?</strong></span>
+     </div>
+    <div class="form-group ">
+      <textarea class="feedback-textarea" name="feedback" rows="4" formControlName="feedback"  placeholder="Please enter your feedback..."></textarea>
+    </div>
+    <div style="text-align:right">
+      <button class="btn btn-primary" type="submit" [disabled]='validateForm(feedback.value)'>Submit</button>  
+      <button (click)="close()" class="btn" type="button">Cancel</button>
+    </div>
+    
+  </form>
+ 
+  <ng-template #ratingTemplate let-i="index" let-v="value">
+    <span class="rating rating-{{i < v ? 'filled' : 'default'}}">
+      {{i < v ? '&#9733;' : '&#9734;'}}
+    </span>
+  </ng-template>
+</div>
