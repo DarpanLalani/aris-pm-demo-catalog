@@ -10,6 +10,7 @@ import { DemoModel } from '../models/demo';
 import { Gallery, GalleryItem, ImageItem } from 'ng-gallery';
 // import { getAuthentication } from "./../demo-management/utils/utils";
 import paclageInfo from '../../../package.json';
+import { FeedbackComponent } from '../feedbackComponent/feedback.component';
 
 @Component({
   selector: 'demodetail',
@@ -365,16 +366,16 @@ export class DemoDetailComponent implements OnInit {
   }
 
   feedback() {
-    /*  if(window && window['aptrinsic'] ){
+     if(window && window['aptrinsic'] ){
        window['aptrinsic']('track', 'gp_demoCatalog_giveFeedback_clicked',  {
          "demoId": this.demoDetails.id,
          "demoName": this.demoDetails.name
        });
-     } */
-    /* const modalRef = this.modalService.show(FeedbackComponent, { initialState: { demoId: this.demoDetails.id, demoName: this.demoDetails.name } });
-    modalRef.content.closeSubject.subscribe((result) => {
+     }
+    const modalRef = this.modalService.show(FeedbackComponent, { initialState: { demoId: this.demoDetails.id, demoName: this.demoDetails.name } });
+    modalRef.content?.closeSubject.subscribe((result) => {
       //      console.log("Feedback Popover: " + result);
-    }); */
+    });
   }
   showInterest() {
     if (window && window['aptrinsic']) {
