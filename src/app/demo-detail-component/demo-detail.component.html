@@ -40,7 +40,7 @@
             <div>This demo is currently in Under Maintenance. If you need the demo urgently contact us.</div>
           </div>
           <div *ngIf="!demoDetails.comingSoon && !demoDetails.underMaintenance" class="col-sm-12 col-xs-12 demo-details-action-bar">
-            <div class="col-sm-8 col-xs-12 meta-information">
+            <div class="row col-sm-8 col-xs-12 meta-information">
               <div class="col-sm-4 col-xs-12 meta-version inline">
                 <div class="legend inline" aria-describedby="Device info">
                   <i class="bi bi-info-circle"></i> Version (Installed):
@@ -74,7 +74,7 @@
                   class="dlt-c8y-icon-cloud-download"></i> Install Demo <i *ngIf="isBusy" class="dlt-c8y-icon-circle-o-notch icon-spin"></i> </button>
               <button *ngIf="isDemoInstallable() && isDemoInstalled()" class="col-sm-4 col-xs-4 btn btn-primary" (click)="deleteDemo()"><i
                   class="dlt-c8y-icon-close"></i> Delete Demo</button>
-              <button *ngIf="isDemoPreviewable()" class="col-sm-4 col-xs-4 btn btn-default w-95" (click)="openPreview()"><i class="bi bi-arrow-up-right-square"></i>
+              <button *ngIf="isDemoPreviewable()" class="col-sm-4 col-xs-4 btn btn-light w-95" (click)="openPreview()"><i class="bi bi-arrow-up-right-square"></i>
                 Preview</button>
               <button class="btn btn-warning w-104" (click)="feedback()"><i class="bi bi-star"></i> Feedback</button>
             </div>
